@@ -1,0 +1,104 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Profile Section */
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.profile-info p {
+    font-size: 16px;
+}
+
+/* Section Headings */
+section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0073e6;
+    border-bottom: 2px solid #0073e6;
+    padding-bottom: 5px;
+}
+
+/* Skills Section */
+.skills-section ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-section li {
+    background-color: #e7f3ff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Education Section */
+.education-section, .experience-section, .other-info-section {
+    margin-top: 20px;
+}
+
+.education-entry, .experience-entry {
+    margin-bottom: 15px;
+}
+
+.education-entry h3, .experience-entry h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.education-entry p, .experience-entry p {
+    font-size: 16px;
+}
+
+/* Other Information */
+.other-info-section p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .profile-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .skills-section ul {
+        justify-content: center;
+    }
+}
